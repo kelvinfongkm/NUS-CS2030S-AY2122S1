@@ -4,6 +4,7 @@ import Lab01.Level1.Level1;
 import Lab01.Level2.Level2;
 import Lab01.Level3.Level3;
 import Lab01.Level4.Level4;
+import Lab01.Level5.Level5;
 
 public class Lab01 {
 
@@ -11,12 +12,14 @@ public class Lab01 {
     static Level2 level2 = new Level2();
     static Level3 level3 = new Level3();
     static Level4 level4 = new Level4();
+    static Level5 level5 = new Level5();
 
     public static void main(String[] args) {
         level1();   // Level 1 - Represent a Point
         level2();   // Level 2 - Find the mid-point and angle of line pq
         level3();   // Level 3 - Moving the point
         level4();   // Level 4 - Creating the Circle
+        level5();   // Level 5 - Maximum Disc Coverage
     }
 
     // Level 1 - Represent a Point
@@ -37,5 +40,10 @@ public class Lab01 {
     // Level 4 - Creating the Circle
     private static void level4() {
         level4.run();
+    }
+
+    // Level 5 - Maximum Disc Coverage
+    private static void level5() {
+        level5.run();
     }
 }
