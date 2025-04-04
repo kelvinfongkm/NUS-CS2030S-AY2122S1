@@ -42,9 +42,9 @@ public class Level5 {
                 Circle circle = createUnitCircle(points[i], points[j]);
 
                 int coverage = 0;
-                for (int k = 0; k < points.length; k++) {
-                    double dx = circle.centre.x - points[k].x;
-                    double dy = circle.centre.y - points[k].y;
+                for (Point point : points) {
+                    double dx = circle.centre.x - point.x;
+                    double dy = circle.centre.y - point.y;
                     double dist = Math.sqrt(dx * dx + dy * dy);
                     if (dist <= circle.radius) coverage++;
                 }
